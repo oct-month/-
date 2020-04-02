@@ -1,0 +1,8 @@
+.container {
+  background-color: #eee;
+  height: 100vh;                /* 占满屏幕 */
+  display: flex;                /* 弹性盒子布局 */
+  flex-direction: column;       /* 垂直方向 */
+  justify-content: space-around;  /* 周围空白处理 */
+  align-items: center;            /* 居中 */
+}

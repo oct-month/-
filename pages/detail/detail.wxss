@@ -1,0 +1,59 @@
+/* pages/detail/detail.wxss */
+.block {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	margin-bottom: 10rpx;
+}
+
+.images {
+	width: 220rpx;
+	height: 300rpx;
+}
+
+.detail {
+	width: 500rpx;
+	height: 300rpx;
+}
+
+.title {
+	font-size: 45rpx;
+    text-decoration: none;
+    color: rgb(50,50,50);
+    font-weight: normal;
+	display: block;
+	margin: 10rpx;
+}
+
+.author {
+	display: block;
+	margin: 10rpx;
+}
+
+#content {
+    display: block;
+}
+
+#head {
+	display: block;
+	text-align: center;
+	font-size: 50rpx;
+}
+
+.chapters {
+	background-color: rgb(195, 223, 234);
+	height: 2.5rem;
+	border: 1px solid rgba(32, 33, 36, .28);
+	border-radius: 2rpx;
+}
+
+.chapter {
+	display: block;
+	width: 100%;
+	margin: 1rpx;
+	margin-left: 3rpx;
+	font-size: 38rpx;
+	overflow: hidden;
+	text-overflow:ellipsis;
+	white-space: nowrap;
+}

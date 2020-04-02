@@ -1,0 +1,20 @@
+<!--pages/chapter/chapter.wxml-->
+<view id="all">
+	<view id="head">
+		<text id="title">{{ title }}</text>
+		<text id="name">{{ name }}</text>
+		<view class="end">
+			<button catchtap="lastChapter" class="button">上一章</button>
+			<button catchtap="toCatalog" class="button">章节目录</button>
+			<button catchtap="nextChapter" class="button">下一章</button>
+		</view>
+		<text id="text">
+			{{ text }}
+		</text>
+	</view>
+	<view wx:if="{{text}}" class="end">
+		<button catchtap="lastChapter" class="button">上一章</button>
+		<button catchtap="toCatalog" class="button">章节目录</button>
+		<button catchtap="nextChapter" class="button">下一章</button>
+	</view>
+</view>

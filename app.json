@@ -1,0 +1,14 @@
+{
+	"pages": [
+		"pages/index/index",
+		"pages/search/search",
+		"pages/detail/detail",
+		"pages/chapter/chapter"
+	],
+	"window": {
+		"navigationBarTextStyle": "black",
+		"navigationBarBackgroundColor": "#FFF",
+		"navigationBarTitleText": "看看书"
+	},
+	"sitemapLocation": "sitemap.json"
+}

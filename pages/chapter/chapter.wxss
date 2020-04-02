@@ -1,0 +1,60 @@
+/* pages/chapter/chapter.wxss */
+#all {
+	width: 100%;
+	background-color: #E9FAFF;
+}
+
+#head {
+	margin: 20rpx;
+}
+
+#title {
+	width: 100%;
+	font-size: 50rpx;
+    text-decoration: none;
+	text-align: center;
+    color: rgb(50,50,50);
+    font-weight: normal;
+	display: block;
+	margin: 10rpx;
+	margin-bottom: 20rpx;
+}
+
+#name {
+	width: 100%;
+	font-size: 48rpx;
+    text-decoration: none;
+	text-align: center;
+	color: #555;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: normal;
+	display: block;
+	margin: 10rpx;
+}
+
+#text {
+	font-family: 方正启体简体,"Microsoft YaHei",微软雅黑,宋体;
+    font-size: 45rpx;
+    letter-spacing: 0.2em;
+    line-height: 150%;
+    padding-top: 15px;
+    width: 95%;
+    margin: auto;
+}
+
+.end {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	margin: 20rpx;
+}
+
+.button {
+	width: 220rpx;
+	font-size: 38rpx;
+	text-align: center;
+	margin-bottom: 20rpx;
+}

@@ -1,0 +1,54 @@
+/* pages/index/index.wxss */
+#logo {
+	height: 4rem;
+	min-height: 4rem;
+	text-align: center;
+	width: 100%;
+	font-size: 80rpx;
+	font-weight: normal;
+	color: rgb(14, 51, 58);
+}
+
+.search {
+	display: flex;                /* 弹性盒子布局 */
+	flex-direction: row;
+	align-items: center;            /* 居中 */
+	background-color: #EFEFF4;
+	width: 100%;
+	margin: 25rpx;
+}
+
+#info {
+	display: flex;                /* 弹性盒子布局 */
+	flex-direction: row;
+	align-items: center;            /* 居中 */
+	border: 1px solid rgba(32, 33, 36, .28);
+	border-radius: 18px;
+	height: 4rem;
+	min-height: 4rem;
+	width: 550rpx;
+	background-color: white;
+	box-shadow: 0 1px 6px 0 rgba(32, 33, 36, .28);}
+
+#search-icon {
+	size: 14;
+}
+
+#search-content {
+	text-align: left;
+	margin-left: 15rpx;
+	font-weight: normal;
+	font-size: 40rpx;
+}
+
+#line {
+	width: 10rpx;
+}
+
+#action {
+	text-align: center;
+	width: 150rpx;
+	color: green;
+	font-size: 60rpx;
+	background-color: #EFEFF4;
+}

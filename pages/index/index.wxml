@@ -1,0 +1,17 @@
+<!--pages/index/index.wxml-->
+<view class="container">
+	<view>
+		<view id="logo">
+			<text>看看书   .</text>
+		</view>
+		<view class="search">
+			<view id="info">
+				<icon id="search-icon" type="search"></icon>
+				<input bindinput="getContent" focus="true" id="search-content" name="info" placeholder="请输入搜索内容" type="text"></input>
+			</view>
+			<view id="line"></view>
+			<text id="action"  catchtap="toSearch">搜索</text>	
+		</view>
+	</view>
+	<view>{{ message }}</view>
+</view>

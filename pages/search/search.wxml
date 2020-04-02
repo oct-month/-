@@ -1,0 +1,41 @@
+<!--pages/search/search.wxml-->
+<view>
+	<text wx:if="{{ !books.length }}" id="none">{{ message }}</text>
+	<view wx:for="{{ books }}">
+		<view class="block">
+			<image catchtap="bookDetail" class="images" src="{{ item[0] }}"
+			data-bookcontent="{{ item[3] }}" 
+			data-bookurl="{{ url + item[1] }}"
+			data-booktitle="{{ item[2] }}"
+			data-bookimage="{{ item[0] }}"
+			data-bookauthor="{{ item[4] }}"></image>
+			<view class="detail">
+				<text catchtap="bookDetail" class="title"
+				data-bookcontent="{{ item[3] }}" 
+				data-bookurl="{{ url + item[1] }}"
+				data-booktitle="{{ item[2] }}"
+				data-bookimage="{{ item[0] }}"
+				data-bookauthor="{{ item[4] }}">{{ item[2] }}</text>
+				<text class="author">作者：{{ item[4] }}</text>
+				<text class="type">类型：{{ item[5] }}</text>
+				<text class="time">更新时间：{{ item[6] }}</text>
+				<view class="new">
+					<text>最新章节：</text>
+					<text catchtap="bookCapter" class="url"
+					data-newurl="{{ url+item[7] }}"
+					data-booktitle="{{ item[2] }}"
+					data-chaptername="{{ item[8] }}"
+					data-bookurl="{{ url + item[1] }}">{{ item[8] }}</text>
+				</view>
+			</view>
+		</view>
+	</view>
+	<view id="status" wx:if="{{ books.length }}">
+		<button class="button" catchtap="page_left">上一页</button>
+		<view id="page-status">
+			<text style="display:'block';">共{{ pages }}页</text>
+			<text style="display:'block';">当前处于第{{ page }}页</text>
+		</view>
+		<button class="button" catchtap="page_right">下一页</button>
+	</view>
+</view>
